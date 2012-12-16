@@ -56,6 +56,15 @@ section
 
 }
 
+#headline
+{
+	text-align: center;
+	width: 100%;
+	padding-top: 35px;
+	padding-bottom: 10px;
+	font: 26px 'DejaVuSansBook', Arial, sans-serif; 
+}
+
 #projects
 {
 	border: 1px solid #ddd;
