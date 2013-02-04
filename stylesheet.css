@@ -85,7 +85,7 @@ section
 	border-right: 1px solid #bbb;
 	border-bottom: 1px solid #bbb;
 	width: 43%;
-	height: 100px;
+	height: 225px;
 	margin-top: 20px;
 	margin-left: 3%;
 	padding: 0px;
@@ -108,6 +108,15 @@ section
 {
 	font-size: 12pt; 
 	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.projectarticle ul
+{
+  text-align:left;
+	font-size: 12pt; 
+	padding-left: 30px;
+	padding-right: 10px;
 }
 
 #networks
@@ -185,7 +194,7 @@ footer
 		padding-top: 20px;
 		padding-bottom: 20px;
 		margin: 20px;
-		min-height: 550px;
+		min-height: 460px;
 	}
 	
   .projectarticle
@@ -194,6 +203,7 @@ footer
 		margin-top: 20px;
 		margin-left: 2%;
 		padding: 0px;
+    height: 180px;
 	}
 	
 	#networks
@@ -238,14 +248,20 @@ footer
 		width: 90%;
 		margin-top: 20px;
 		margin-left: 0px;
+		font: 11px 'DejaVuSansBook', Arial, sans-serif;
 		padding: 0px;
-		font: 10px 'DejaVuSansBook', Arial, sans-serif;
-		height: 120px;
+    height: 250px;
 	}
 	
 	.projectarticle p
 	{
-		font-size: 10pt; 
+		font: 12px 'DejaVuSansBook', Arial, sans-serif;
+		padding-left: 10px;
+	}
+	
+  .projectarticle ul
+	{
+		font: 12px 'DejaVuSansBook', Arial, sans-serif;
 		padding-left: 10px;
 	}
 	
