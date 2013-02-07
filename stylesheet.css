@@ -194,7 +194,7 @@ footer
 		padding-top: 20px;
 		padding-bottom: 20px;
 		margin: 20px;
-		min-height: 460px;
+		min-height: 540px;
 	}
 	
   .projectarticle
@@ -203,7 +203,7 @@ footer
 		margin-top: 20px;
 		margin-left: 2%;
 		padding: 0px;
-    height: 180px;
+    height: 230px;
 	}
 	
 	#networks
@@ -240,19 +240,19 @@ footer
 	
 	#projects
 	{
-		min-height: 600px;
+		min-height: 800px;
 	}
 	
 	.projectarticle
 	{
 		width: 90%;
 		margin-top: 20px;
-		margin-left: 0px;
-		font: 11px 'DejaVuSansBook', Arial, sans-serif;
+		margin-left: 2%;
 		padding: 0px;
-    height: 250px;
+    height: 350px;
 	}
-	
+
+  /*
 	.projectarticle p
 	{
 		font: 12px 'DejaVuSansBook', Arial, sans-serif;
@@ -264,6 +264,7 @@ footer
 		font: 12px 'DejaVuSansBook', Arial, sans-serif;
 		padding-left: 10px;
 	}
+  */
 	
 	h1
 	{
