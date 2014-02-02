@@ -1,144 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Paul Yasi</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="DejaVu-Sans-fontfacekit/stylesheet.css" type="text/css" charset="utf-8">
-	<link rel="stylesheet" media="screen" href="stylesheet.css" type="text/css">
-</head>
-<body>
-	<header>
-		<div class="centerblock">
-			<h1>PAUL YASI</h1>
-		</div>
-	</header>
+---
+layout: default
+title: Home
+---
 
-	<div id="content">
-		
-		<div class="centerblock">
-		
-			<section id="projects">
-				<h3>Software Projects and Blogs</h3>
-				
-				<article class="projectarticle">
-					<img src="img/linux_icon_32.png" align=left>
-					<b>Open Source</b>
-					<p align=left >
-          I have a number of projects on 
-					<a href="http://www.github.com/paulyasi">github</a> and 
-					<a href="http://pyasi.users.sourceforge.net/">sourceforge</a> 
-          most notably:
-          <ul>
-          <li>I am the lead developer of the <a href="http://www.citrusdb.org">CitrusDB Customer Database</a> and Billing Software
-          <li>A <a href="http://github.com/paulyasi/encryption_helper">PHP Encryption Helper</a>
-          <li>And I also maintain the <a href="https://github.com/paulyasi/forest-monk-theme">Forest Monk Color Scheme</a> for Emacs and Vim
-          </ul>
-          </p>
-				</article>
-				
-				<article class="projectarticle">	
-					<img src="img/blog_icon_31.png" align=left vspace=2 hspace=2>
-					<!-- blog icon creative commons share alike with attribution to theblogicon.com -->
-					<b>Blogging</b>
-					<p align=left>
-          I blog about linux, open source, web development, paleo nutrition,and my personal photo blog.
-          <ul>
-          <li><a href="http://www.rootprime.com">Rootprime</a> blog about open source and web technology
-          <li>At <a href="http://www.zenandtheartofpaleo.com">Zen and the Art of Paleo</a> I blog about paleo health and fitness 
-          <li><a href="http://www.coffeebuzz.com">Coffeebuzz</a> holds photos and stories
-          </ul>
-					</p>
-				</article>
-			
-			</section>
-		
-			<section id="networks">
-				<h3>Professional Networks</h3>
-				<article class="networkarticle">
-					<a href="http://www.linkedin.com/pub/paul-yasi/1/24a/105">
-					<img src="img/linkedin_logo.jpg" vspace=5></a>
-				</article>
-				<article class="networkarticle">
-					<a href="http://www.github.com/paulyasi">
-					<img src="img/github_logo.png"></a>
-				</article>
-				<article class="networkarticle">
-					<a href="http://www.launchpad.net/~paul-citrusdb">
-					<img src="img/launchpad_logo.png" vspace=5></a>
-				</article>
-				<article class="networkarticle">
-					<a href="http://careers.stackoverflow.com/paulyasi">
-					<img src="img/stackoverflow_logo.png"></a>
-				</article>
-			</section>
-			
-		</div>
-	
-	</div>	
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-	<aside>
+    <span class="post-date">{{ post.date | date_to_string }}</span>
 
-		<div class="centerblock">
-						
-			<section class="asideblock" style="margin-top: 0px;">
-				<p>
-					<img class="icon" src="img/my_icon.jpg" border=1 align=left vspace=5 hspace=10 width=64>Web applications and linux systems using open source, and open web standards.
-				</p>
-				
-				<br /><br />
-                <h4>CONTACT ME</h4>
-				Email: <a href="mailto:paul@paulyasi.com">paul@paulyasi.com</a>
-				<p>
-				Voice: 1-774-277-9270
-			</section>
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
 
-			<section class="asideblock">
-				<h4>App Technology</h4>
-				PHP<br />
-				Perl<br />
-				CodeIgniter<br />
-				Zend<br />
-				HTML5<br />
-				CSS3<br />
-				Javascript<br />
-				<br />
-				<h4>Hosting Technology</h4>
-				Apache<br />
-				MySQL<br />
-				Bind<br />
-				Postfix<br />
-				Ubuntu<br />
-				Solaris<br />
-				
-			</section>
-
-			<section class="asideblock">
-				<h4>Blog Roll</h4>
-				<a href="http://5by5.tv">5by5 Broadcasts</a><br />
-				<a href="http://alistapart.com">A List Apart</a><br />
-				<a href="http://shiflett.org">Chris Schiflett</a><br />
-				<a href="http://codinghorror.com">Coding Horror</a><br />
-				<a href="http://twit.tv">This Week in Tech</a><br />
-				<a href="http://dslreports.com">DSL Reports</a><br />
-				<a href="http://ellislab.com/blog">EllisLab Blog</a><br />
-				<a href="http://wired.com/epicenter">Wired Epicenter</a><br />
-				<a href="http://gtdtimes.com">GTD Times</a></a><br />
-				<a href="http://cringely.com">I, Cringely</a><br />
-				<a href="http://iloveubuntu.net">I Love Ubuntu</a><br />
-				<a href="http://marksdailyapple.com">Mark's Daily Apple</a><br />
-				<a href="https://www.owasp.org/index.php/Application_Security_News">OWASP AppSec News</a><br />
-				<a href="http://hanselman.com/blog/">Scott Hanselman</a><br />
-				<a href="http://webmonkey.com">Web Monkey</a><br />
-				<br />				
-			</section>
-		
-		</div>
-
-	</aside>
-
-	<footer>
-		Created in Massachusetts
-	</footer>
-
-</body>
-</html>
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="/">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
