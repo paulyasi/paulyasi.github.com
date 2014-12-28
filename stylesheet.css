@@ -74,7 +74,7 @@ section
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin: 20px;
-	min-height: 300px;
+	min-height: 190px;
 }
 
 .projectarticle
@@ -84,8 +84,8 @@ section
 	border: 1px solid #ddd;
 	border-right: 1px solid #bbb;
 	border-bottom: 1px solid #bbb;
-	width: 43%;
-	height: 225px;
+	width: 28.5%;
+	height: 145px;
 	margin-top: 20px;
 	margin-left: 3%;
 	padding: 0px;
@@ -194,7 +194,7 @@ footer
 		padding-top: 20px;
 		padding-bottom: 20px;
 		margin: 20px;
-		min-height: 540px;
+		min-height: 360px;
 	}
 	
   .projectarticle
@@ -203,7 +203,7 @@ footer
 		margin-top: 20px;
 		margin-left: 2%;
 		padding: 0px;
-    height: 230px;
+    height: 100px;
 	}
 	
 	#networks
@@ -240,7 +240,7 @@ footer
 	
 	#projects
 	{
-		min-height: 800px;
+		min-height: 460px;
 	}
 	
 	.projectarticle
@@ -249,7 +249,7 @@ footer
 		margin-top: 20px;
 		margin-left: 2%;
 		padding: 0px;
-    height: 350px;
+    height: 130px;
 	}
 
   /*
