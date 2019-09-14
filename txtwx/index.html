@@ -33157,14 +33157,17 @@
 
 			var url = "https://forecast.weather.gov/MapClick.php?lat=" + lat +  "&lon=" + long + "&unit=0&lg=english&FcstType=text&TextType=1";
 
-		     window.open(url); 
+		     window.open(url, '_self', false); 
 		    return false;
 		}
 		</script>
+<center>
+		<h1>Enter your zipcode for a text weather forecast</h1>
 
 		<form onsubmit="return doSomething();" name="myform">
 			<input type="text" name="zipcode" placeholder="Zip Code">
 		    <input type="submit" value="Go">
 		</form>
+		</center>
 	</body>
 </html>
