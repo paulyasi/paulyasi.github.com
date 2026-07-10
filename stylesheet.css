@@ -129,6 +129,7 @@ section
 	padding-bottom:20px;
 	margin: 20px;
 	min-height: 120px;
+	line-height: 1.5;
 }
 
 .networkarticle
@@ -171,6 +172,8 @@ aside
 
 footer
 {
+	position: asolute;
+	bottom: 0;
 	text-align: center;
 	background-color: #ccc;
 	border-top: 1px dotted #bbb;
@@ -178,6 +181,7 @@ footer
 	background-position: right bottom;
 	color: black;
 	padding: 15px; 
+	height: 27rem;
 	font: 12px 'DejaVuSansBook', Arial, sans-serif; 
 }
 
@@ -230,6 +234,10 @@ footer
 		margin-top: 6%;
 		margin-left: 3%;
 		min-height: 280px;
+	}
+
+	footer {
+		height: 68rem;
 	}
 	
 }
@@ -296,6 +304,10 @@ footer
 	aside
 	{
 		min-height: 1200px;
+	}
+
+	footer {
+		height: 70rem;
 	}
 	
 }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stupid Powershell Tricks - Paul Yasi Blog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="DejaVu-Sans-fontfacekit/stylesheet.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" media="screen" href="../../stylesheet.css" type="text/css">
+</head>
+<body>
+	<header>
+		<div class="centerblock">
+			<h1>PAUL YASI</h1>
+		</div>
+	</header>
+
+	<div id="content" style="height: 200%;">
+		
+		<div class="centerblock" style="height: 200%;">
+		
+			<section id="networks" style="padding: 40px; font-size: 12pt;">
+				<h2 style="color: black; font-size: 20pt;">Stupid Powershell Tricks</h2>
+					<p align=left>
+					I have recently been using Windows 11 Powershell more because of how awful the windows file explorer is.  Even doing something simple like going to your home directory from the task bar it not easy. Everything is extra multi level navigation or extra clicks.  I have resorted to navigating the filesystem inside of Powershell.  Powershell at least starts  you off in your own home directory instead of an ever changing list of recent files or a quick access list I have to manage separately.  
+					</p>
+					<p align=left>
+				<h3 style="color: black; font-size: 16pt;">List directories with dir | fw</h3>
+					Listing directories with simply typing dir or ls works fine when you have a few files, however when your list of files gets too long it goes way up off the screen in a single column.  In the old command line of dos there was the /w switch that would print wide. I found you can pipe the output of the dir command to Format-Wide or the alias of a simple "fw" so dir | fw is a quick way to print a wide directory listing.
+					</p>
+				<h3 style="color: black; font-size: 16pt;">Execute Applications and Open Files with ii</h3>
+					<p align=left>
+					The ii command is an alias of Invoke-Item, this will open a file with the default application for that item or run an application. I am finding this easier to navigate and open files with this when I have been navigating around the file system with powershell.
+					</p>
+					<h3 style="color: black; font-size: 16pt;">Search strings in files with findstr "&lt;string&gt;" *</h3>
+					Findstr is an old <a href="https://devblogs.microsoft.com/oldnewthing/20121128-00/?p=5963">command from Windows 2000</a>, however I did not use the Windows 2000 command line too much and was not familar with it as much as linux, mac and unix command lines.  This works like the grep command to find strings in your files, so you can search for that string in all the files in a directory with findstr "&lt;search string&gt;" *
+					<p align=left>
+					Parts of microsoft are moving windows to be more and more like Unix with <a href="https://learn.microsoft.com/en-us/windows/core-utils/overview">Coreutils</a> and embracing linux with Azure Linux maybe they will eventually bring back the proper home directory concept.
+					</p>
+					<p align=center>
+					<a href="http://paulyasi.com"</a>return home</a>
+					</p>
+			</section>
+		
+		</div>
+	
+	</div>	
+
+	<footer>
+
+		<div class="centerblock">
+						
+			<section class="asideblock" style="margin-top: 0px;">
+				<p>
+				<div style="border: 1px solid black; background-color: white; padding: 20px;">
+					<a href="https://hyperpaste.com"><img src="../../img/hyperpaste_logo.png"><br>
+					I provide <a href="https://hyperpaste.com">software consulting at HyperPaste</a>, a web development studio working on cloud applications, e-commerce, and lead software engineering services.
+					<img src="../../img/paul.webp" style="width: 165px; padding: 20px;">
+				</div>
+				</p>
+				
+				<br /><br />
+				<p>
+			</section>
+
+			<section class="asideblock">
+				<h4>App Technology</h4>
+				PHP<br />
+				Python<br />
+				Java<br />
+				Ruby<br />
+				CodeIgniter<br />
+				Zend<br />
+				Dropwizard<br />
+				Flask<br />
+				HTML5<br />
+				CSS3<br />
+				jQuery<br />
+				Bootstrap<br />
+				<br />
+				<h4>Hosting Technology</h4>
+				Amazon Web Services<br />
+				Apache<br />
+				MySQL<br />
+				Ubuntu<br />
+				Redhat<br />
+				
+			</section>
+
+			<section class="asideblock">
+				<h4>Blog Roll</h4>
+				<a href="http://5by5.tv">5by5 Broadcasts</a><br />
+				<a href="http://alistapart.com">A List Apart</a><br />
+				<a href="http://shiflett.org">Chris Schiflett</a><br />
+				<a href="http://codinghorror.com">Coding Horror</a><br />
+				<a href="http://twit.tv">This Week in Tech</a><br />
+				<a href="http://dslreports.com">DSL Reports</a><br />
+				<a href="http://ellislab.com/blog">EllisLab Blog</a><br />
+				<a href="http://wired.com/epicenter">Wired Epicenter</a><br />
+				<a href="http://gtdtimes.com">GTD Times</a></a><br />
+				<a href="http://cringely.com">I, Cringely</a><br />
+				<a href="http://iloveubuntu.net">I Love Ubuntu</a><br />
+				<a href="http://marksdailyapple.com">Mark's Daily Apple</a><br />
+				<a href="https://www.owasp.org/index.php/Application_Security_News">OWASP AppSec News</a><br />
+				<a href="http://hanselman.com/blog/">Scott Hanselman</a><br />
+				<a href="http://webmonkey.com">Web Monkey</a><br />
+				<br />				
+			</section>
+		
+		</div>
+
+	</footer>
+
+
+</body>
+</html>
+
+
+
+
